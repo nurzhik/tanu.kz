@@ -138,26 +138,30 @@ jQuery(document).ready(function ($){
    
 
 
+  
     
-   
-    var menu = document.querySelector(".m_menu");
-    var mob_part = document.querySelector(".mob_part");
-    var close = document.querySelector(".mob_close");
-    var m_sub = document.querySelector(".m_sub");
+
+    
+    var open_close = document.querySelector(".icon");
+    var category = document.querySelector(".category_sub");
   
 
-     $('.m_menu').click(function(e) {
-    var $mob_part = $('.mob_part');
-    if ($mob_part.css('display') != 'block') {
-        $mob_part.animate({width: "show"}, 1000);
-    };
-    $('.mob_close').click(function(e){
-    		$mob_part.animate({width: "hide"}, 1000);
-    	});
-    e.preventDefault();
+     $('.icon').click(function(e) {
+    var $category = $('.category_sub');
+    if ($(this).hasClass('active')) {
+         
+               $(this).removeClass('active');
+      $(this).siblings(".category_sub").removeClass('sub_show');
+
+    } 
+    else {
+         $(this).addClass('active');
+
+            $(this).siblings(".category_sub").addClass('sub_show');
+         
+        }
+
+    });
     });
 
-    
 
-
-});

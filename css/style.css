@@ -347,3 +347,155 @@ span.slick-next.slick-nav.slick-nav--next.slick-arrow{
     color: #fff;
 }
 /*footer end*/
+/*category*/
+.category {
+    width: 25%;
+    float: left;
+}
+.category_wr {
+    margin-right: 20px;
+}
+.title_category {
+    color: #ffffff;
+    font-size: 16px;
+    font-family: "NeueCyr-Roman";
+    background: #8db94d;
+    line-height: 59px;
+    text-align: center;
+}
+
+.category_list {
+    padding: 30px 40px;
+    list-style: none;
+    background-color: #cccccc;
+}
+.category_list li {
+    margin-bottom: 15px;
+}
+.category_list > li > a {
+    color: #343434;
+    font-family: "NeueCyr-Bold";
+    font-size: 16px;
+}
+.category_list > li > .icon {
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0ZWQgYnkgSWNvTW9vbi5pbyAtLT4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiI+CjxwYXRoIGZpbGw9IiMwMDAwMDAiIGQ9Ik0yIDF2MTRsMTItN3oiLz4KPC9zdmc+Cg==);
+    content: "";
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    float: left;
+    margin-right: 5px;
+    background-size: cover;
+    cursor: pointer;
+}
+.category_list > li.category_content {
+    width: 75%;
+    float: left;
+    padding-top: 15px;
+} > a:hover  {
+    color: #7dac39;
+}
+.category_list > li > .icon.active {background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDQwNC4zMDggNDA0LjMwOSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDA0LjMwOCA0MDQuMzA5OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZD0iTTAsMTAxLjA4aDQwNC4zMDhMMjAyLjE1MSwzMDMuMjI5TDAsMTAxLjA4eiIgZmlsbD0iIzAwMDAwMCIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=)}
+.category_sub {
+    padding: 10px 0px 0px 33px;
+    display: none;
+}
+.category_sub.sub_show {
+    display: block;
+}
+.category_sub li {
+    margin-bottom: 2px;
+}
+.category_sub li a {
+    color: #343434;
+    font-family: "NeueCyr-Roman";
+    font-size: 14px;
+}
+.mob_title_category {
+    display: none;
+}
+/*category content*/
+.content_top {
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.category_content {
+    width: 75%;
+    float: left;
+    padding-top: 15px;
+}
+.select_city {
+    float: left;
+    width: 30%;
+}
+.select_city select {
+    padding: 5px 5px 5px 5px;
+    color: #6b6b6b;
+    font-family: "NeueCyr-Light";
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #000;
+}
+.search {
+    position: relative;
+    width: 27%;
+    float: right;
+}
+.search button {
+    float: right;
+    height: 34px;
+    background-color: rgba(81, 81, 81, 0);
+    width: 32px;
+    border: none;
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMS4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI1MC4zMTMgMjUwLjMxMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjUwLjMxMyAyNTAuMzEzOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCI+CjxnIGlkPSJTZWFyY2giPgoJPHBhdGggc3R5bGU9ImZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkOyIgZD0iTTI0NC4xODYsMjE0LjYwNGwtNTQuMzc5LTU0LjM3OGMtMC4yODktMC4yODktMC42MjgtMC40OTEtMC45My0wLjc2ICAgYzEwLjctMTYuMjMxLDE2Ljk0NS0zNS42NiwxNi45NDUtNTYuNTU0QzIwNS44MjIsNDYuMDc1LDE1OS43NDcsMCwxMDIuOTExLDBTMCw0Ni4wNzUsMCwxMDIuOTExICAgYzAsNTYuODM1LDQ2LjA3NCwxMDIuOTExLDEwMi45MSwxMDIuOTExYzIwLjg5NSwwLDQwLjMyMy02LjI0NSw1Ni41NTQtMTYuOTQ1YzAuMjY5LDAuMzAxLDAuNDcsMC42NCwwLjc1OSwwLjkyOWw1NC4zOCw1NC4zOCAgIGM4LjE2OSw4LjE2OCwyMS40MTMsOC4xNjgsMjkuNTgzLDBDMjUyLjM1NCwyMzYuMDE3LDI1Mi4zNTQsMjIyLjc3MywyNDQuMTg2LDIxNC42MDR6IE0xMDIuOTExLDE3MC4xNDYgICBjLTM3LjEzNCwwLTY3LjIzNi0zMC4xMDItNjcuMjM2LTY3LjIzNWMwLTM3LjEzNCwzMC4xMDMtNjcuMjM2LDY3LjIzNi02Ny4yMzZjMzcuMTMyLDAsNjcuMjM1LDMwLjEwMyw2Ny4yMzUsNjcuMjM2ICAgQzE3MC4xNDYsMTQwLjA0NCwxNDAuMDQzLDE3MC4xNDYsMTAyLjkxMSwxNzAuMTQ2eiIgZmlsbD0iIzAwMDAwMCIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=);
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: center center;
+    border: 1px solid #000;
+    border-left: none;
+    cursor: pointer;
+}
+.search input {
+    width: 85%;
+    height: 32px;
+    border: none;
+    padding: 0px 0px 0px 0px;
+    color: #9c9c9c;
+    font-size: 13px;
+    text-align: left;
+    float: right;
+    outline: none;
+    border: 1px solid #000;
+    border-right: none;
+    text-indent: 10px;
+}
+.consultant_list.second li {
+    width: 30%;
+    margin-right: 4.4%;
+    margin-bottom: 20px;
+}
+.consultant_list.second li:nth-child(3n) {
+    margin-right: 0;
+}
+.consultant_item_img.second {
+    position: relative;
+}
+.stats {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 10px;
+    line-height: 22px;
+    color:#fff;
+}
+.stats.online {
+    background-color: #8db94d;
+}
+.stats.offline {
+    background-color: #ff4f4f;
+}
+.stats.break {
+    background-color: #f7941d;
+}
+/*end*/
+/*category end*/
