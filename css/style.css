@@ -33,13 +33,15 @@
   font-weight: normal;
   font-style: normal;
 }
-.page{
+.page {
     width: 100%;
     margin: 0 auto;
     max-width: 1920px;
     position: relative;
     overflow-x: hidden;
+    min-height: 100%;
 }
+
 header {
     background-image: url(../img/header_bg.jpg);
     float: left;
@@ -904,4 +906,12 @@ input#file-1 {
 }
 .date{
     margin-bottom: 7px;
+}
+.content {
+    padding-top: 20px;
+}
+.content p {
+    color: #6b6b6b;
+    margin-bottom: 15px;
+    font-family: "NeueCyr-Light";
 }
