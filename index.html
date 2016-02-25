@@ -23,7 +23,7 @@
 			<div class="cr">
 				<a href="" class="logo"><img src="img/logo.png" alt=""></a>
 				<div class="consultant_enter">
-					<a href="#modal1" class=" open_modal button consultan_form">стать консультантом</a>
+					<a href="" class="  button consultan_form">стать консультантом</a>
 					<a href="" class=" button enter">вход</a>
 				</div>
 				<div class="head_bottom">
@@ -34,7 +34,7 @@
 				</div>
 				<div class="fraza_dnia">
 					<div class="title_fraza">фраза дня</div>
-					<a href="" class=" button enter">предложить фразу дня</a>	
+					<a href="#modal1" class=" open_modal button enter">предложить фразу дня</a>	
 			
 						<p>“ Пройденный путь и есть награда. ”
 							<span>Стив Джобс</span>
@@ -48,13 +48,13 @@
 							Выберите направление и задайте свой вопрос
 						</div>
 						<ul class="menu">
-							<li>
+							<li id="pre1">
 								<a href="" class="head">психология  </a>
 							</li>
-								<li>
+								<li id="pre2">
 								<a href="" class="heart">медицина      </a>
 							</li>
-								<li>
+								<li id="pre1">
 								<a href="" class="libra">Юриспрудеция    </a>
 							</li>
 								<li>
@@ -88,7 +88,6 @@
 
 					</div>
 					<div class="how_it_works_video">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/4Z4_e1HDNQs" frameborder="0" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
@@ -136,6 +135,7 @@
 						</div>
 					</div>
 				</div>
+				<a href="" class="review_add button">Оставить отзыв</a>
 			</div>
 		</section>
 		<section class="consultant_container">
@@ -195,7 +195,10 @@
 				</ul>
 			</div>
 		</section>
-		<footer>
+		<div class="clearfix"></div>
+		
+	</div>
+	<footer>
 			<div class="footer">
 				<div class="cr">
 					<a href="" class="logo_f">
@@ -219,21 +222,15 @@
 				</div>
 			</div>
 		</footer>
-	</div>
 	<div id="modal1" class="modal_div"> <!-- скрытый див с уникальным id = modal1 -->
 	<span class="modal_close"></span>
 		<div class="logo"><img src="img/logo.png" alt=""></div>
-	<div class="title_z">Заполните форму
-<span>и мы рассмотрим вашу кандидатуру</span></div>
+	<div class="title_z">Предложите фразу
+	<span>ее прочитают все пользователи tanu.kz</span></div>
 
         <form method="POST" name="form1" action="form.php" >
 			<input  name="name"  maxlength="200" class="modal_f" type="text" size="1"  required placeholder="Фио*"/>
-			<input   name="phone"  maxlength="200" class="modal_f " type="text" size="1"  required placeholder="Контактный номер*"/>
-			<input   name="mail"  maxlength="200" class="modal_f " type="text" size="1"  required placeholder="Эл. почта*"/>
-			<div class="box">
-					<input type="file" name="file-2[]" id="file-2" class="inputfile inputfile-2" data-multiple-caption="{count} files selected" multiple />
-					<label for="file-2"> <span>Прикрепите резюме*</span></label>
-				</div>
+			<textarea name="comment"  class="modal_f "cols="30" rows="10" required placeholder="Фраза дня..."></textarea>
 			<button type="submit"  name="submit1" >Отправить</button>
 		</form>
 	</div>

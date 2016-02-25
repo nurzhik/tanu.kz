@@ -13,7 +13,6 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/slide.css">
 	<link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-	<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
 	<script src="js/app.js" type="text/javascript"></script>
 
 </head>
@@ -57,38 +56,50 @@
 						<li>Статус</li>
 					</ul>
 				</div>
-				<ul class="stats_list">
-					<li class=" online active">Онлайн</li>
-					<li class=" offline">Офлайн</li>
-					<li class=" break">Перерыв</li>
-				</ul>
+				<form action="">
+				<div class="stats_item ">		
+					<label  for="online">Онлайн</label>
+					<input id ="online"type="checkbox"/>
+				</div>
+				<div class="stats_item ">		
+					<label  for="offline">Офлайн</label>
+					<input id ="offline"type="checkbox"/>
+				</div>
+				<div class="stats_item ">		
+					<label  for="break">Перерыв</label>
+					<input id ="break"type="checkbox"/>
+				</div>
+					<button type="submit" id="btns"/></button>	
+				</form>
 				<p class="stats_info">На сайте ваш статус Онлайн</p>
 		</div>
 		</div>
-		<footer>
-			<div class="footer">
-				<div class="cr">
-					<a href="" class="logo_f">
-						<img src="img/logo_f.png" alt="">
-					</a>
-					<div class="footer_menu">
-						<ul class="f_menu_left">
-							<li><a href="">Помощь</a></li>
-							<li><a href="">о проекте</a></li>
-							<li><a href="">оставить отзыв</a></li>
-						</ul>
-						<ul class="f_menu_right">
-							<li><a href="">написать нам</a></li>
-							<li><a href="">вопросы ответы</a></li>
-							<li><a href="">наш call center</a></li>
-						</ul>
-					</div>
-					<p class="developed">
-						разработано в <a href="">astanacreative.kz</a>
-					</p>
-				</div>
-			</div>
-		</footer>
+		<div class="clearfix"></div>
+		
 	</div>
+	<footer>
+		<div class="footer">
+			<div class="cr">
+				<a href="" class="logo_f">
+					<img src="img/logo_f.png" alt="">
+				</a>
+				<div class="footer_menu">
+					<ul class="f_menu_left">
+						<li><a href="">Помощь</a></li>
+						<li><a href="">о проекте</a></li>
+						<li><a href="">оставить отзыв</a></li>
+					</ul>
+					<ul class="f_menu_right">
+						<li><a href="">написать нам</a></li>
+						<li><a href="">вопросы ответы</a></li>
+						<li><a href="">наш call center</a></li>
+					</ul>
+				</div>
+				<p class="developed">
+					разработано в <a href="">astanacreative.kz</a>
+				</p>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
