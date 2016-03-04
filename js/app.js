@@ -1,27 +1,27 @@
-jQuery(document).ready(function() { // запускаем скрипт после загрузки всех элементов
-    /* засунем сразу все элементы в переменные, чтобы скрипту не приходилось их каждый раз искать при кликах */
-    var overlay = $('#overlay'); // подложка, должна быть одна на странице
-    var open_modal = $('.open_modal'); // все ссылки, которые будут открывать окна
-    var close = $('.modal_close, #overlay'); // все, что закрывает модальное окно, т.е. крестик и оверлэй-подложка
-    var modal = $('.modal_div'); // все скрытые модальные окна
+jQuery(document).ready(function() { // Р·Р°РїСѓСЃРєР°РµРј СЃРєСЂРёРїС‚ РїРѕСЃР»Рµ Р·Р°РіСЂСѓР·РєРё РІСЃРµС… СЌР»РµРјРµРЅС‚РѕРІ
+    /* Р·Р°СЃСѓРЅРµРј СЃСЂР°Р·Сѓ РІСЃРµ СЌР»РµРјРµРЅС‚С‹ РІ РїРµСЂРµРјРµРЅРЅС‹Рµ, С‡С‚РѕР±С‹ СЃРєСЂРёРїС‚Сѓ РЅРµ РїСЂРёС…РѕРґРёР»РѕСЃСЊ РёС… РєР°Р¶РґС‹Р№ СЂР°Р· РёСЃРєР°С‚СЊ РїСЂРё РєР»РёРєР°С… */
+    var overlay = $('#overlay'); // РїРѕРґР»РѕР¶РєР°, РґРѕР»Р¶РЅР° Р±С‹С‚СЊ РѕРґРЅР° РЅР° СЃС‚СЂР°РЅРёС†Рµ
+    var open_modal = $('.open_modal'); // РІСЃРµ СЃСЃС‹Р»РєРё, РєРѕС‚РѕСЂС‹Рµ Р±СѓРґСѓС‚ РѕС‚РєСЂС‹РІР°С‚СЊ РѕРєРЅР°
+    var close = $('.modal_close, #overlay'); // РІСЃРµ, С‡С‚Рѕ Р·Р°РєСЂС‹РІР°РµС‚ РјРѕРґР°Р»СЊРЅРѕРµ РѕРєРЅРѕ, С‚.Рµ. РєСЂРµСЃС‚РёРє Рё РѕРІРµСЂР»СЌР№-РїРѕРґР»РѕР¶РєР°
+    var modal = $('.modal_div'); // РІСЃРµ СЃРєСЂС‹С‚С‹Рµ РјРѕРґР°Р»СЊРЅС‹Рµ РѕРєРЅР°
 
-     open_modal.click( function(event){ // ловим клик по ссылке с классом open_modal
-         event.preventDefault(); // вырубаем стандартное поведение
-         var div = $(this).attr('href'); // возьмем строку с селектором у кликнутой ссылки
-         overlay.fadeIn(400, //показываем оверлэй
-             function(){ // после окончания показывания оверлэя
-                 $(div) // берем строку с селектором и делаем из нее jquery объект
+     open_modal.click( function(event){ // Р»РѕРІРёРј РєР»РёРє РїРѕ СЃСЃС‹Р»РєРµ СЃ РєР»Р°СЃСЃРѕРј open_modal
+         event.preventDefault(); // РІС‹СЂСѓР±Р°РµРј СЃС‚Р°РЅРґР°СЂС‚РЅРѕРµ РїРѕРІРµРґРµРЅРёРµ
+         var div = $(this).attr('href'); // РІРѕР·СЊРјРµРј СЃС‚СЂРѕРєСѓ СЃ СЃРµР»РµРєС‚РѕСЂРѕРј Сѓ РєР»РёРєРЅСѓС‚РѕР№ СЃСЃС‹Р»РєРё
+         overlay.fadeIn(400, //РїРѕРєР°Р·С‹РІР°РµРј РѕРІРµСЂР»СЌР№
+             function(){ // РїРѕСЃР»Рµ РѕРєРѕРЅС‡Р°РЅРёСЏ РїРѕРєР°Р·С‹РІР°РЅРёСЏ РѕРІРµСЂР»СЌСЏ
+                 $(div) // Р±РµСЂРµРј СЃС‚СЂРѕРєСѓ СЃ СЃРµР»РµРєС‚РѕСЂРѕРј Рё РґРµР»Р°РµРј РёР· РЅРµРµ jquery РѕР±СЉРµРєС‚
                      .css('display', 'block') 
-                     .animate({opacity: 1, top: '50%'}, 200); // плавно показываем
+                     .animate({opacity: 1, top: '50%'}, 200); // РїР»Р°РІРЅРѕ РїРѕРєР°Р·С‹РІР°РµРј
          });
      });
 
-     close.click( function(){ // ловим клик по крестику или оверлэю
-            modal // все модальные окна
-             .animate({opacity: 0, top: '45%'}, 200, // плавно прячем
-                 function(){ // после этого
+     close.click( function(){ // Р»РѕРІРёРј РєР»РёРє РїРѕ РєСЂРµСЃС‚РёРєСѓ РёР»Рё РѕРІРµСЂР»СЌСЋ
+            modal // РІСЃРµ РјРѕРґР°Р»СЊРЅС‹Рµ РѕРєРЅР°
+             .animate({opacity: 0, top: '45%'}, 200, // РїР»Р°РІРЅРѕ РїСЂСЏС‡РµРј
+                 function(){ // РїРѕСЃР»Рµ СЌС‚РѕРіРѕ
                      $(this).css('display', 'none');
-                     overlay.fadeOut(400); // прячем подложку
+                     overlay.fadeOut(400); // РїСЂСЏС‡РµРј РїРѕРґР»РѕР¶РєСѓ
                  }
              );
      });
@@ -95,7 +95,26 @@ jQuery(document).ready(function ($) {
         })
 
   });
-    
+    $(document).ready(function(){
+    var button = document.getElementById('push_stats');
+    $(".stats_cons  ").change(function () {
+          $(".stats_cons input:checked").each(function () {
+                button.click();
+              });
+         
+        })
+
+  });
+  $(document).ready(function(){
+    var button = document.getElementById('test');
+    $(".stats_cons  ").change(function () {
+          $(".stats_cons input:checked").each(function () {
+                button.click();
+              });
+         
+        })
+
+  });
 
    $(document).ready(function(){
     var button = document.getElementById('btn');
@@ -105,5 +124,68 @@ jQuery(document).ready(function ($) {
               });
          
         })
+	
 
   });
+  $(document).ready(function(){
+  $('.mob_category').on('click', function(){
+          
+          $('.category').addClass('filtr_show');
+		  $('.category').animate({width: "show"}, "easein");
+		  $('.title_category').addClass('close');
+		if($('.category').hasClass('filtr_show')){
+			$('.title_category').text('Р—Р°РєСЂС‹С‚СЊ РєР°С‚РµРіРѕСЂРёРё Рё РїРѕРґРєР°С‚РµРіРѕСЂРёРё');
+		}
+    });
+
+		 $('.title_category').on('click', function(){
+			 if($('.title_category').hasClass('close')){
+          $('.category').animate({width: "hide"}, "easein");
+		}
+	  });
+	  
+});
+/*Выбор специальзаций*/
+jQuery(document).ready(function() { 
+   $('a[data-click="modal"]').click(function () {
+        var itemWindow = $(this).data('item');
+        if ($(itemWindow).hasClass('active')) {
+            $('.mask, .modal__close, .modal, body').removeClass('active');
+        } else {
+            $(itemWindow).addClass('active');
+            $('.mask, body').addClass('active');
+        }
+    });
+
+    $('.mask, .modal__close').click(function () {
+        $('.mask, .modal__close, .modal, body').removeClass('active');
+    });
+	
+	
+	
+	 $('.specialization_item').click(function () {
+			 if($(this).parent().hasClass('active')){
+			 $(this).removeClass('active');
+		 }
+		 else if($(this).hasClass('active')){
+			 $(this).removeClass('active')
+		 }
+		 else{
+			$(this).addClass('active');
+			$(this).parent().siblings('.specialization-item').addClass('active');
+
+		 }
+		 if ($(this).hasClass('active')) {
+            $(this).children('input[type=checkbox]').attr('checked', true);
+        } else {
+            $(this).children('input[type=checkbox]').attr('checked', false);
+        }
+		 if($('.specialization_item').hasClass('active')){
+			return false;
+		 }else{
+			 $(this).parent().siblings('.specialization-item').removeClass('active');
+		 }
+		 
+		 
+		 })  
+	    });
