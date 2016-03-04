@@ -1072,7 +1072,7 @@ button.edit_profile {
     color: #FF9C0F;
 	cursor:pointer;
 }
-.get_consultation:hover,.specialization__btn:hover{
+.get_consultation:hover,.specialization__btn:hover,.spec_vibor:hover{
 	 box-shadow: inset 0 0 0 4px #8db94d, 0 0 1px rgba(0, 0, 0, 0);
 	  -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -1494,8 +1494,8 @@ input#Upload0Attachment,#Upload1Attachment,#UserPhoto,#Upload2Attachment,#Upload
 .coment_form .form_item button{
 	float:right;
 }
-.specialization__btn {
-    line-height: 44px;
+.specialization__btn, .spec_vibor {
+    line-height: 34px;
     background-color: #8db94d;
     display: inline-block;
     text-transform: uppercase;
@@ -1503,11 +1503,26 @@ input#Upload0Attachment,#Upload1Attachment,#UserPhoto,#Upload2Attachment,#Upload
     font-family: "NeueCyr-LightItalic";
     box-shadow: 0px 3px 0px 0px #5e8229;
     padding: 0 15px;
-    float: right;
+}
+.specialization-list-selected__item {
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    white-space: nowrap;
+    color: #fff;
+    background: #8DB94D;
+    font-size: 12px;
+    float: left;
+}
+.specialization-list-selected__item input {
+    display:none;
 }
 .ocenka_cons {
     width: 60%;
     float: right;
+}
+.specialization__btn {
+    margin-top: 20px;
 }
 
 .ocenka_cons label {
@@ -1531,4 +1546,8 @@ input#Upload0Attachment,#Upload1Attachment,#UserPhoto,#Upload2Attachment,#Upload
 }
 .ocenka_cons_item input{
     width:auto;
+}
+.specialization-list-selected_container {
+    width: 60%;
+    float: right;
 }

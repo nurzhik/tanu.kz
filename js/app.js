@@ -107,8 +107,8 @@ jQuery(document).ready(function ($) {
   });
   $(document).ready(function(){
     var button = document.getElementById('test');
-    $(".stats_cons  ").change(function () {
-          $(".stats_cons input:checked").each(function () {
+    $(".stats_cons").change(function () {
+          $(".stats_cons input").each(function () {
                 button.click();
               });
          
@@ -168,7 +168,7 @@ jQuery(document).ready(function() {
 			 $(this).removeClass('active');
 		 }
 		 else if($(this).hasClass('active')){
-			 $(this).removeClass('active')
+			 $(this).removeClass('active');
 		 }
 		 else{
 			$(this).addClass('active');
@@ -187,5 +187,11 @@ jQuery(document).ready(function() {
 		 }
 		 
 		 
-		 })  
+		 }),
+		$(".specialization__btn").click(function() {
+            var item = $("#specialization").find(".specialization_item.active");
+            $(".specialization-list-selected").html(" "), $(".mask, .modal__close, .modal, body").removeClass("active"), 0 != item.length ? $(".spec_vibor").html("Изменить специализацию") : $(".spec_vibor").html(" Специализация"), item.each(function(index, element) {
+                $(".specialization-list-selected").append('<div class="specialization-list-selected__item">' + $(element).html() + "</div>")
+            })
+        })	
 	    });

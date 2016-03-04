@@ -95,12 +95,13 @@
 						</div>
 						<div class="form_item">
 							<label for="microblog">Выберите специализацию:</label>
-							<a href="#" class="specialization__btn" data-click="modal" data-type="one-spec" data-item="#specialization"  >
-
-							Специализация
-						</a>
+							<div class="specialization-list-selected_container">
+								<a href="#" class="spec_vibor"  data-click="modal" data-type="one-spec" data-item="#specialization"  >
+									Специализация
+								</a>
+							<div class="specialization-list-selected"></div>
+							</div>
 						</div>
-						
 						<div class="form_item">
 							<label for="counseling_area">Область консультирования:</label>
 							<textarea id="counseling_area">	</textarea>
@@ -161,6 +162,7 @@
 	 <div id="specialization" class="modal specialization">
 		<div class="modal__close">x</div>
 		<div class="modal__title">Выберите специализацию</div>
+		<span class="specialization__btn">Выбрать</span>
 		<div class="specialization-list">
 			<div class="specialization-item">
 			  <div class="specialization-item__title">Отделочные работы</div>
