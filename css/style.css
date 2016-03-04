@@ -1153,7 +1153,9 @@ button.edit_profile {
     float: left;
     padding-top: 15px;
 }
-
+.specialization-item {
+    width: 28%!important;
+}
 .consultant_item {
 	width:auto;
     margin: 0 auto;
@@ -1201,6 +1203,9 @@ button.edit_profile {
 }
 .consultant_list.second li:nth-child(2n) {
     margin-right:0px;
+}
+.specialization-item{
+	width:42%!important;
 }
 .button.consultan_form {
     margin-right: 22px;
@@ -1292,6 +1297,9 @@ header {
     width: 48%;
     margin-right: 4%;
 }
+.specialization-item{
+	width:50%!important;
+}
 .consultant_list li .consultant_item{
 	width:auto;
 }
@@ -1309,6 +1317,7 @@ header {
     margin-right: 0px;
 	margin-bottom:15px;
 }
+
 .f_menu_left{
 	float:none;
 	margin-right:0px;
