@@ -203,13 +203,31 @@ jQuery(document).ready(function() {
 		 
 		 
 		 }),
+		 $('.lang_item').click(function () {
+			 if($(this).hasClass('active')){
+			 $(this).removeClass('active');
+		 }else{
+			 $(this).addClass('active');
+		 }
+		
+		 
+		 
+		 }),
 		$(".specialization__btn").click(function() {
             var item = $("#specialization").find(".specialization_item.active");
-            $(".specialization-list-selected").html(" "), $(".mask, .modal__close, .modal, body").removeClass("active"), 0 != item.length ? $(".spec_vibor").html("РР·РјРµРЅРёС‚СЊ СЃРїРµС†РёР°Р»РёР·Р°С†РёСЋ") : $(".spec_vibor").html(" РЎРїРµС†РёР°Р»РёР·Р°С†РёСЏ"), item.each(function(index, element) {
+            $(".specialization-list-selected").html(" "), $(".mask, .modal__close, .modal, body").removeClass("active"), 0 != item.length ? $(".spec_vibor").html("Изменить ") : $(".spec_vibor").html(" Специализация"), item.each(function(index, element) {
                 $(".specialization-list-selected").append('<div class="specialization-list-selected__item">' + $(element).html() + "</div>")
             })
-        })	
+        }),	
+		
+		$(".langs__btn").click(function() {
+            var item = $("#langs").find(".lang_item.active");
+            $(".langs-list-selected").html(" "), $(".mask, .modal__close, .modal, body").removeClass("active"), 0 != item.length ? $(".langs").html("Изменить") : $(".langs").html(" Выбрать"), item.each(function(index, element) {
+                $(".langs-list-selected").append('<div class="langs-list-selected__item">' + $(element).html() + "</div>")
+            })
+        })
 	    });
+		
 		$(document).ready(function() {
 	$(".fancybox").fancybox({
 		openEffect	: 'none',
