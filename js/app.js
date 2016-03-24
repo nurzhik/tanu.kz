@@ -1,27 +1,27 @@
-jQuery(document).ready(function() { // Р·Р°РїСѓСЃРєР°РµРј СЃРєСЂРёРїС‚ РїРѕСЃР»Рµ Р·Р°РіСЂСѓР·РєРё РІСЃРµС… СЌР»РµРјРµРЅС‚РѕРІ
-    /* Р·Р°СЃСѓРЅРµРј СЃСЂР°Р·Сѓ РІСЃРµ СЌР»РµРјРµРЅС‚С‹ РІ РїРµСЂРµРјРµРЅРЅС‹Рµ, С‡С‚РѕР±С‹ СЃРєСЂРёРїС‚Сѓ РЅРµ РїСЂРёС…РѕРґРёР»РѕСЃСЊ РёС… РєР°Р¶РґС‹Р№ СЂР°Р· РёСЃРєР°С‚СЊ РїСЂРё РєР»РёРєР°С… */
-    var overlay = $('#overlay'); // РїРѕРґР»РѕР¶РєР°, РґРѕР»Р¶РЅР° Р±С‹С‚СЊ РѕРґРЅР° РЅР° СЃС‚СЂР°РЅРёС†Рµ
-    var open_modal = $('.open_modal'); // РІСЃРµ СЃСЃС‹Р»РєРё, РєРѕС‚РѕСЂС‹Рµ Р±СѓРґСѓС‚ РѕС‚РєСЂС‹РІР°С‚СЊ РѕРєРЅР°
-    var close = $('.modal_close, #overlay'); // РІСЃРµ, С‡С‚Рѕ Р·Р°РєСЂС‹РІР°РµС‚ РјРѕРґР°Р»СЊРЅРѕРµ РѕРєРЅРѕ, С‚.Рµ. РєСЂРµСЃС‚РёРє Рё РѕРІРµСЂР»СЌР№-РїРѕРґР»РѕР¶РєР°
-    var modal = $('.modal_div'); // РІСЃРµ СЃРєСЂС‹С‚С‹Рµ РјРѕРґР°Р»СЊРЅС‹Рµ РѕРєРЅР°
+jQuery(document).ready(function() { // Р В·Р В°Р С—РЎС“РЎРѓР С”Р В°Р ВµР С РЎРѓР С”РЎР‚Р С‘Р С—РЎвЂљ Р С—Р С•РЎРѓР В»Р Вµ Р В·Р В°Р С–РЎР‚РЎС“Р В·Р С”Р С‘ Р Р†РЎРѓР ВµРЎвЂ¦ РЎРЊР В»Р ВµР СР ВµР Р…РЎвЂљР С•Р Р†
+    /* Р В·Р В°РЎРѓРЎС“Р Р…Р ВµР С РЎРѓРЎР‚Р В°Р В·РЎС“ Р Р†РЎРѓР Вµ РЎРЊР В»Р ВµР СР ВµР Р…РЎвЂљРЎвЂ№ Р Р† Р С—Р ВµРЎР‚Р ВµР СР ВµР Р…Р Р…РЎвЂ№Р Вµ, РЎвЂЎРЎвЂљР С•Р В±РЎвЂ№ РЎРѓР С”РЎР‚Р С‘Р С—РЎвЂљРЎС“ Р Р…Р Вµ Р С—РЎР‚Р С‘РЎвЂ¦Р С•Р Т‘Р С‘Р В»Р С•РЎРѓРЎРЉ Р С‘РЎвЂ¦ Р С”Р В°Р В¶Р Т‘РЎвЂ№Р в„– РЎР‚Р В°Р В· Р С‘РЎРѓР С”Р В°РЎвЂљРЎРЉ Р С—РЎР‚Р С‘ Р С”Р В»Р С‘Р С”Р В°РЎвЂ¦ */
+    var overlay = $('#overlay'); // Р С—Р С•Р Т‘Р В»Р С•Р В¶Р С”Р В°, Р Т‘Р С•Р В»Р В¶Р Р…Р В° Р В±РЎвЂ№РЎвЂљРЎРЉ Р С•Р Т‘Р Р…Р В° Р Р…Р В° РЎРѓРЎвЂљРЎР‚Р В°Р Р…Р С‘РЎвЂ Р Вµ
+    var open_modal = $('.open_modal'); // Р Р†РЎРѓР Вµ РЎРѓРЎРѓРЎвЂ№Р В»Р С”Р С‘, Р С”Р С•РЎвЂљР С•РЎР‚РЎвЂ№Р Вµ Р В±РЎС“Р Т‘РЎС“РЎвЂљ Р С•РЎвЂљР С”РЎР‚РЎвЂ№Р Р†Р В°РЎвЂљРЎРЉ Р С•Р С”Р Р…Р В°
+    var close = $('.modal_close, #overlay'); // Р Р†РЎРѓР Вµ, РЎвЂЎРЎвЂљР С• Р В·Р В°Р С”РЎР‚РЎвЂ№Р Р†Р В°Р ВµРЎвЂљ Р СР С•Р Т‘Р В°Р В»РЎРЉР Р…Р С•Р Вµ Р С•Р С”Р Р…Р С•, РЎвЂљ.Р Вµ. Р С”РЎР‚Р ВµРЎРѓРЎвЂљР С‘Р С” Р С‘ Р С•Р Р†Р ВµРЎР‚Р В»РЎРЊР в„–-Р С—Р С•Р Т‘Р В»Р С•Р В¶Р С”Р В°
+    var modal = $('.modal_div'); // Р Р†РЎРѓР Вµ РЎРѓР С”РЎР‚РЎвЂ№РЎвЂљРЎвЂ№Р Вµ Р СР С•Р Т‘Р В°Р В»РЎРЉР Р…РЎвЂ№Р Вµ Р С•Р С”Р Р…Р В°
 
-     open_modal.click( function(event){ // Р»РѕРІРёРј РєР»РёРє РїРѕ СЃСЃС‹Р»РєРµ СЃ РєР»Р°СЃСЃРѕРј open_modal
-         event.preventDefault(); // РІС‹СЂСѓР±Р°РµРј СЃС‚Р°РЅРґР°СЂС‚РЅРѕРµ РїРѕРІРµРґРµРЅРёРµ
-         var div = $(this).attr('href'); // РІРѕР·СЊРјРµРј СЃС‚СЂРѕРєСѓ СЃ СЃРµР»РµРєС‚РѕСЂРѕРј Сѓ РєР»РёРєРЅСѓС‚РѕР№ СЃСЃС‹Р»РєРё
-         overlay.fadeIn(400, //РїРѕРєР°Р·С‹РІР°РµРј РѕРІРµСЂР»СЌР№
-             function(){ // РїРѕСЃР»Рµ РѕРєРѕРЅС‡Р°РЅРёСЏ РїРѕРєР°Р·С‹РІР°РЅРёСЏ РѕРІРµСЂР»СЌСЏ
-                 $(div) // Р±РµСЂРµРј СЃС‚СЂРѕРєСѓ СЃ СЃРµР»РµРєС‚РѕСЂРѕРј Рё РґРµР»Р°РµРј РёР· РЅРµРµ jquery РѕР±СЉРµРєС‚
+     open_modal.click( function(event){ // Р В»Р С•Р Р†Р С‘Р С Р С”Р В»Р С‘Р С” Р С—Р С• РЎРѓРЎРѓРЎвЂ№Р В»Р С”Р Вµ РЎРѓ Р С”Р В»Р В°РЎРѓРЎРѓР С•Р С open_modal
+         event.preventDefault(); // Р Р†РЎвЂ№РЎР‚РЎС“Р В±Р В°Р ВµР С РЎРѓРЎвЂљР В°Р Р…Р Т‘Р В°РЎР‚РЎвЂљР Р…Р С•Р Вµ Р С—Р С•Р Р†Р ВµР Т‘Р ВµР Р…Р С‘Р Вµ
+         var div = $(this).attr('href'); // Р Р†Р С•Р В·РЎРЉР СР ВµР С РЎРѓРЎвЂљРЎР‚Р С•Р С”РЎС“ РЎРѓ РЎРѓР ВµР В»Р ВµР С”РЎвЂљР С•РЎР‚Р С•Р С РЎС“ Р С”Р В»Р С‘Р С”Р Р…РЎС“РЎвЂљР С•Р в„– РЎРѓРЎРѓРЎвЂ№Р В»Р С”Р С‘
+         overlay.fadeIn(400, //Р С—Р С•Р С”Р В°Р В·РЎвЂ№Р Р†Р В°Р ВµР С Р С•Р Р†Р ВµРЎР‚Р В»РЎРЊР в„–
+             function(){ // Р С—Р С•РЎРѓР В»Р Вµ Р С•Р С”Р С•Р Р…РЎвЂЎР В°Р Р…Р С‘РЎРЏ Р С—Р С•Р С”Р В°Р В·РЎвЂ№Р Р†Р В°Р Р…Р С‘РЎРЏ Р С•Р Р†Р ВµРЎР‚Р В»РЎРЊРЎРЏ
+                 $(div) // Р В±Р ВµРЎР‚Р ВµР С РЎРѓРЎвЂљРЎР‚Р С•Р С”РЎС“ РЎРѓ РЎРѓР ВµР В»Р ВµР С”РЎвЂљР С•РЎР‚Р С•Р С Р С‘ Р Т‘Р ВµР В»Р В°Р ВµР С Р С‘Р В· Р Р…Р ВµР Вµ jquery Р С•Р В±РЎР‰Р ВµР С”РЎвЂљ
                      .css('display', 'block') 
-                     .animate({opacity: 1, top: '50%'}, 200); // РїР»Р°РІРЅРѕ РїРѕРєР°Р·С‹РІР°РµРј
+                     .animate({opacity: 1, top: '50%'}, 200); // Р С—Р В»Р В°Р Р†Р Р…Р С• Р С—Р С•Р С”Р В°Р В·РЎвЂ№Р Р†Р В°Р ВµР С
          });
      });
 
-     close.click( function(){ // Р»РѕРІРёРј РєР»РёРє РїРѕ РєСЂРµСЃС‚РёРєСѓ РёР»Рё РѕРІРµСЂР»СЌСЋ
-            modal // РІСЃРµ РјРѕРґР°Р»СЊРЅС‹Рµ РѕРєРЅР°
-             .animate({opacity: 0, top: '45%'}, 200, // РїР»Р°РІРЅРѕ РїСЂСЏС‡РµРј
-                 function(){ // РїРѕСЃР»Рµ СЌС‚РѕРіРѕ
+     close.click( function(){ // Р В»Р С•Р Р†Р С‘Р С Р С”Р В»Р С‘Р С” Р С—Р С• Р С”РЎР‚Р ВµРЎРѓРЎвЂљР С‘Р С”РЎС“ Р С‘Р В»Р С‘ Р С•Р Р†Р ВµРЎР‚Р В»РЎРЊРЎР‹
+            modal // Р Р†РЎРѓР Вµ Р СР С•Р Т‘Р В°Р В»РЎРЉР Р…РЎвЂ№Р Вµ Р С•Р С”Р Р…Р В°
+             .animate({opacity: 0, top: '45%'}, 200, // Р С—Р В»Р В°Р Р†Р Р…Р С• Р С—РЎР‚РЎРЏРЎвЂЎР ВµР С
+                 function(){ // Р С—Р С•РЎРѓР В»Р Вµ РЎРЊРЎвЂљР С•Р С–Р С•
                      $(this).css('display', 'none');
-                     overlay.fadeOut(400); // РїСЂСЏС‡РµРј РїРѕРґР»РѕР¶РєСѓ
+                     overlay.fadeOut(400); // Р С—РЎР‚РЎРЏРЎвЂЎР ВµР С Р С—Р С•Р Т‘Р В»Р С•Р В¶Р С”РЎС“
                  }
              );
      });
@@ -60,6 +60,18 @@ jQuery(document).ready(function ($) {
             prevArrow: '<span class="slick-prev slick-nav slick-nav--prev" aria-label="previous"></span>',
             nextArrow: '<span class="slick-next slick-nav slick-nav--next" aria-label="next"></span>'
         });
+			$('.certificat_slider').slick({
+				autoplay: false,
+        autoplaySpeed: 2000,
+        speed: 1000,
+        arrows: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        pauseOnHover: true,
+        initialSlide: 0,
+        prevArrow: '<span class="slick-prev our_clients_nav slick-nav--prev" aria-label="previous"></span>',
+        nextArrow: '<span class="slick-next our_clients_nav slick-nav--next" aria-label="next"></span>',
+			});
     });
 
 jQuery(document).ready(function ($) {
@@ -96,15 +108,18 @@ jQuery(document).ready(function ($) {
 
   });
     $(document).ready(function(){
-    var button = document.getElementById('push_stats');
-    $(".stats_cons  ").change(function () {
-          $(".stats_cons input:checked").each(function () {
-                button.click();
-              });
-         
-        })
+var button = document.getElementById('push_stats');
+var $input = $('#stats');
+$("input").change(function (showValues) {
+$input.prop('checked');
+});
+function showValues() {
+button.click();
+}
+$(":checkbox, :radio").click(showValues);
 
-  });
+
+});
   $(document).ready(function(){
     var button = document.getElementById('test');
     $(".stats_cons").change(function () {
@@ -134,7 +149,7 @@ jQuery(document).ready(function ($) {
 		  $('.category').animate({width: "show"}, "easein");
 		  $('.title_category').addClass('close');
 		if($('.category').hasClass('filtr_show')){
-			$('.title_category').text('Р—Р°РєСЂС‹С‚СЊ РєР°С‚РµРіРѕСЂРёРё Рё РїРѕРґРєР°С‚РµРіРѕСЂРёРё');
+			$('.title_category').text('РљР°С‚РµРіРѕСЂРёРё РїРѕРґРєР°С‚РµРіРѕСЂРёРё');
 		}
     });
 
@@ -145,7 +160,7 @@ jQuery(document).ready(function ($) {
 	  });
 	  
 });
-/*Выбор специальзаций*/
+/*Р’С‹Р±РѕСЂ СЃРїРµС†РёР°Р»СЊР·Р°С†РёР№*/
 jQuery(document).ready(function() { 
    $('a[data-click="modal"]').click(function () {
         var itemWindow = $(this).data('item');
@@ -190,8 +205,14 @@ jQuery(document).ready(function() {
 		 }),
 		$(".specialization__btn").click(function() {
             var item = $("#specialization").find(".specialization_item.active");
-            $(".specialization-list-selected").html(" "), $(".mask, .modal__close, .modal, body").removeClass("active"), 0 != item.length ? $(".spec_vibor").html("Изменить специализацию") : $(".spec_vibor").html(" Специализация"), item.each(function(index, element) {
+            $(".specialization-list-selected").html(" "), $(".mask, .modal__close, .modal, body").removeClass("active"), 0 != item.length ? $(".spec_vibor").html("РР·РјРµРЅРёС‚СЊ СЃРїРµС†РёР°Р»РёР·Р°С†РёСЋ") : $(".spec_vibor").html(" РЎРїРµС†РёР°Р»РёР·Р°С†РёСЏ"), item.each(function(index, element) {
                 $(".specialization-list-selected").append('<div class="specialization-list-selected__item">' + $(element).html() + "</div>")
             })
         })	
 	    });
+		$(document).ready(function() {
+	$(".fancybox").fancybox({
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
+});

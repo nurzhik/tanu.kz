@@ -16,6 +16,17 @@
         touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
 }
+ 
+.certificat_slider.slick-initialized.slick-slider img {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+}
+.certificat_slider.slick-initialized.slick-slider{
+
+	width: 90%;
+    margin: 0 auto 10px;
+}
 .slider.slick-initialized.slick-slider {
     width: 90%;
     margin: 0 auto;
@@ -300,29 +311,54 @@
 }
 .slick-prev.our_clients_nav {
     position: absolute;
-    left: -52px;
-    background-image: url(../img/left_our_client.png);
+    left: -27px;
     width: 22px;
-    height: 59px;
+    height: 100%;
     background-repeat: no-repeat;
-    bottom: 9px;
+    line-height: 120px;
+    bottom: 0;
+    background: #86c2ff;
+    border-radius: 9px 0px 0px 9px;
 }
-span.slick-next.our_clients_nav{
+
+
+.slick-prev.our_clients_nav:before {
+background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDM3MC44MTQgMzcwLjgxNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzcwLjgxNCAzNzAuODE0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPGc+CgkJPHBvbHlnb24gcG9pbnRzPSIyOTIuOTIsMjQuODQ4IDI2OC43ODEsMCA3Ny44OTUsMTg1LjQwMSAyNjguNzgxLDM3MC44MTQgMjkyLjkyLDM0NS45NjEgMTI3LjYzOCwxODUuNDAxICAgIiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
+   content: " ";
+    width: 16px;
+    height: 16px;
+    margin-left: 2px;
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slick-next.our_clients_nav:before {
+background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDMwOS4xNDMgMzA5LjE0MyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzA5LjE0MyAzMDkuMTQzOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCI+CjxwYXRoIGQ9Ik0yNDAuNDgxLDE0OS4yNjhMOTMuNDEsMi4xOTdjLTIuOTI5LTIuOTI5LTcuNjc4LTIuOTI5LTEwLjYwNiwwTDY4LjY2MSwxNi4zNCAgYy0xLjQwNywxLjQwNi0yLjE5NywzLjMxNC0yLjE5Nyw1LjMwM2MwLDEuOTg5LDAuNzksMy44OTcsMi4xOTcsNS4zMDNsMTI3LjYyNiwxMjcuNjI1TDY4LjY2MSwyODIuMTk3ICBjLTEuNDA3LDEuNDA2LTIuMTk3LDMuMzE0LTIuMTk3LDUuMzAzYzAsMS45ODksMC43OSwzLjg5NywyLjE5Nyw1LjMwM2wxNC4xNDMsMTQuMTQzYzEuNDY0LDEuNDY0LDMuMzg0LDIuMTk3LDUuMzAzLDIuMTk3ICBjMS45MTksMCwzLjgzOS0wLjczMiw1LjMwMy0yLjE5N2wxNDcuMDcxLTE0Ny4wNzFDMjQzLjQxMSwxNTYuOTQ2LDI0My40MTEsMTUyLjE5NywyNDAuNDgxLDE0OS4yNjh6IiBmaWxsPSIjRkZGRkZGIi8+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=);
+   content: " ";
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slick-next.our_clients_nav {
     position: absolute;
-    right: -52px;
-    background-image: url(../img/right_our_client.png);
+    right: -27px;
     width: 22px;
-    height: 59px;
+    height: 100%;
     background-repeat: no-repeat;
-    bottom: 9px;
+    bottom: 0;
+    background: #86c2ff;
+    line-height: 120px;
+    border-radius: 0px 9px 9px 0px;
 }
-.slick-next.our_clients_nav:hover{
-    background-image: url(../img/right_our_client_hover.png);
+
+.slick-prev.our_clients_nav:hover,.slick-next.our_clients_nav:hover {
     cursor: pointer;
-}
-.slick-prev.our_clients_nav:hover{
-    background-image: url(../img/left_our_client_hover.png);
-    cursor: pointer;
+    background: #4F92D6;
+	transition: all 0.4s ease-in;
 }
 
 /*out clients*/
