@@ -25,7 +25,13 @@ jQuery(document).ready(function() { // Р В·Р В°Р С—РЎС“РЎРѓР
                  }
              );
      });
+	  $( "#month" ).datepicker({
+    inline: true
 });
+      $("#roundTimeExample").timepicker({ 'timeFormat': 'H:i' });
+});
+});
+
 
 /*
      _ _      _       _
